@@ -1,0 +1,224 @@
+html {
+    background-color: hsl(210, 25%, 8%);
+    display: block;
+    color: #d1d0d0;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+    /* Margin missing here, do after nav */
+    overflow-x: hidden;
+    margin-top: 70px;
+    display: block;
+}
+body {
+    display: block;
+}
+.example_code {
+    position: relative;
+    width: 100% !important;
+    background-color: #191f26;
+    border-radius: 4px;
+    padding: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.example_code_with_ferris  {
+    position: relative;
+    width: 100% !important;
+    background-color: #191f26;
+    border-radius: 4px;
+    padding: 12px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+.orange {
+    color: #ffb454;
+}
+.orange_strong {
+    color: #ff7733;
+}
+.yellow {
+    color : #ffee99;
+}
+.green_string {
+    color: #b8cc52;
+}
+.highlight {
+    font-size: 15px;
+    color: #ffb454;
+    background-color: hsl(252, 13%, 15%);
+    border-radius: 3px;
+    padding: 1px 6px 2px;
+}
+.example_command {
+    position: relative;
+    width: 100% !important;
+    background-color: #191f26;
+    border-radius: 3px;
+    padding: 12px;
+}
+a {
+    color: hsl(210, 75%, 50%);
+}
+p {
+    line-height: 25px;
+}
+.side-nav-bar {
+    width: 310px;
+    background-color: #161a22;
+    float: left;
+    position: fixed;
+    margin: 0px;
+    border-radius: 5px;
+    top: 0px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+    display: block;
+    padding-top: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: 4;
+    animation-duration: 50ms;
+    animation-name: onAndOff;
+}
+.side-block-bar {
+    position: relative;
+}
+.navActivation {
+
+}
+
+@keyframes onAndOff {
+    from {
+        
+    }
+    to {
+        width: 3000px;
+    }
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ffb454;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ffee99;
+    border-radius: 2px;
+}
+.side-nav-scrollbox {
+    width: 310px;
+}
+.content {
+    max-width: 800px;
+    min-width: 490px; 
+    margin: 0 auto;
+    position: relative;
+    padding-left: 215px;
+}
+a {
+    text-decoration: none;
+}
+li a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+#chapters li a:hover {
+    color: #ffb454;
+}
+#chapters li {
+    color: #c5c5c5;
+    list-style: none!important;
+    line-height: 22px;
+    font-size: 0.875em;
+    list-style-type: none;
+    margin-left: -27px;
+    width: 252px;
+}
+.sub-chapters {
+    font-size: 16px!important;  
+}
+.sub-chapters li {
+    line-height: 22px!important; 
+    margin-left: -15px!important;
+}
+#chapters li {
+    margin-top: 7px;
+}
+pre {
+    position: relative;
+    white-space: pre;
+}
+.ferris {
+    max-width: 90px;
+    position: absolute;
+    margin: 40px 0 0 590px;
+}
+#top-nav-bar {
+    width: 98vw;
+    height: 50px;
+    background-color:#10101a;
+    margin-left: 30px;
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    border-bottom: 1px hsla(210, 25%, 13%, 1) solid;
+}
+#nav-title {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 100;
+    font-size: 22px;
+    bottom: -6px;
+    left: 45%;
+    position: relative;  
+    color:#f3eded;
+    opacity: 0.45;
+    display: inline;
+}
+.collapseLogo {
+    width: 1.1rem;
+    height: 27%;
+    position: absolute;
+    background: repeating-linear-gradient(
+        black,
+        grey 35%
+    );
+    align-items: center;
+    left: 19vw;
+    top: 17px;
+    z-index: 20;
+    cursor: pointer;
+    
+}
+
+.collapseLogo:hover {
+    background: repeating-linear-gradient(
+        black,
+        white 35%
+    );  
+    background-color: white;
+    transition: background-color 700ms ease;
+}
+#button-background {
+    width: 1.5%;
+    height: 30%;
+    background-color: #c5c5c5;
+    left: 20vw;
+    display: inline;
+    
+}
+#button-background:hover {
+    background-color: white;
+    
+}
+.closedNav {
+    width: 0;
+    transition: width 400ms ease;
+}
+.openNav {
+    width: 310px;
+    transition: width 300ms ease;
+}
